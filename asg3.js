@@ -336,7 +336,7 @@ function convertCoordinatesEventToGL(ev)
 function mouseCam(ev)
 {
   var coord = convertCoordinatesEventToGL(ev);
-  var panAngle = coord[0] * 10;
+  var panAngle = coord[0] * 30;
 
   if (panAngle < 0) {
     g_camera.panLeft(-panAngle);
