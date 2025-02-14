@@ -1,0 +1,50 @@
+<!-- Nguyen Vu 
+npvu@ucsc.edu -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <div class="container">
+      <canvas id="webgl" width="400" height="400">
+      Please use a browser that supports "canvas"
+      </canvas>
+    </div>
+
+    <p id = "numdot"> XXX </p>
+    
+    <p>
+    Head Angle <input type="range" min= "-15" max= "15" value= "0" class = "slider" id="leftSlide">
+    Animation: 
+    <button type = "button" id = "animHeadOnButton">ON</button>
+    <button type = "button" id = "animHeadOffButton">OFF</button>
+
+    <p>
+    Upper Leg <input type="range" min= "-30" max= "30" value= "0" class = "slider" id="upperSlide">
+    <p>
+    Lower Leg <input type="range" min= "-15" max= "15" value= "0" class = "slider" id="lowerSlide">
+
+    <p>
+    Camera Angle <input type="range" min= "0" max= "360" value= "0" class = "slider" id="angleSlide">
+
+    <p>
+    Notes to graders:<br />
+    The story of this world is a pig is being IQ tested by human to see if it can escape a maze.<br />
+    Wow factor: the maze is randomly generated every time the brower is loaded.
+    <!-- Import libraries -->
+    <script src= "lib/webgl-utils.js"></script>
+    <script src= "lib/webgl-debug.js"></script>
+    <script src= "lib/cuon-utils.js"></script>
+    <script src= "lib/cuon-matrix-cse160.js"></script>    
+
+    <!-- Import scripts -->
+    <script src="Triangle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Camera.js"></script>
+
+    <script src="asg3.js"></script>
+  </body>
+</html>
